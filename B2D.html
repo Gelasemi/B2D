@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business 2 Development | Accélérateur de croissance B2B à Madagascar</title>
+    <meta name="description" content="Business 2 Development accompagne les entreprises dans leur développement commercial, conseil stratégique et mise en relation B2B à Antananarivo, Madagascar.">
+   
+    <!-- Police Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        slate: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        },
+                        blue: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+   
+    <style>
+        /* Styles utilitaires pour simuler les effets de Lucide et interactions */
+        body { font-family: 'Montserrat', sans-serif; }
+        .lucide { width: 24px; height: 24px; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; fill: none; stroke: currentColor; }
+        .glass-effect { background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(4px); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased flex flex-col min-h-screen">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 glass-effect border-b border-slate-200 shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
+                        <svg class="lucide w-6 h-6 text-white" viewBox="0 0 24 24"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                    </div>
+                    <div class="hidden sm:block">
+                        <span class="text-xl font-bold text-slate-900">Business 2</span>
+                        <span class="text-xl font-light text-blue-600 ml-1">Development</span>
+                    </div>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#accueil" class="text-slate-700 hover:text-blue-600 transition-colors font-medium text-sm">Accueil</a>
+                    <a href="#about" class="text-slate-700 hover:text-blue-600 transition-colors font-medium text-sm">À propos</a>
+                    <a href="#services" class="text-slate-700 hover:text-blue-600 transition-colors font-medium text-sm">Services</a>
+                    <a href="#why-us" class="text-slate-700 hover:text-blue-600 transition-colors font-medium text-sm">Pourquoi nous ?</a>
+                    <a href="#contact" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all h-9 px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-sm">Contactez-nous</a>
+                </div>
+                <!-- Mobile Menu Icon (Visual only) -->
+                <button class="md:hidden p-2 text-slate-700">
+                    <svg class="lucide w-6 h-6" viewBox="0 0 24 24"><path d="M4 12h16"></path><path d="M4 18h16"></path><path d="M4 6h16"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-1">
+       
+        <!-- Hero Section -->
+        <section id="accueil" class="relative overflow-hidden py-20 lg:py-32">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900"></div>
+            <!-- Decorative blurs -->
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-20 left-20 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+                <div class="absolute bottom-20 right-20 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+            </div>
+            <div class="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                        Accélérez le développement de votre entreprise à Madagascar et au-delà
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+                        Accélérateur de croissance pour les entreprises ambitieuses. Nous transformons les opportunités en résultats concrets.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#contact" class="inline-flex items-center justify-center gap-2 transition-all bg-white text-blue-700 hover:bg-blue-50 text-lg px-8 py-6 font-semibold rounded-md h-16 shadow-sm">
+                            Demander un accompagnement
+                            <svg class="lucide w-5 h-5 ml-2" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                        </a>
+                        <a href="#services" class="inline-flex items-center justify-center gap-2 transition-all border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-6 font-semibold rounded-md h-16">
+                            Découvrir nos services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Proposition -->
+        <section class="py-16 lg:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Notre proposition de valeur</h2>
+                        <p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                            Business 2 Development accompagne les entreprises, entrepreneurs et organisations dans leur développement commercial, stratégique et relationnel.
+                        </p>
+                    </div>
+                   
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                        <!-- Card 1 -->
+                        <div class="bg-white flex flex-col gap-6 rounded-xl py-6 shadow-sm border-2 border-slate-100 hover:border-blue-200 hover:shadow-lg transition-all duration-300 p-6 text-center">
+                            <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <svg class="lucide w-7 h-7 text-blue-600" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                            </div>
+                            <h3 class="font-semibold text-slate-900 mb-2">Approche stratégique</h3>
+                            <p class="text-sm text-slate-600">Personnalisée selon vos besoins</p>
+                        </div>
+                       
+                        <!-- Card 2 -->
+                        <div class="bg-white flex flex-col gap-6 rounded-xl py-6 shadow-sm border-2 border-slate-100 hover:border-blue-200 hover:shadow-lg transition-all duration-300 p-6 text-center">
+                            <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <svg class="lucide w-7 h-7 text-green-600" viewBox="0 0 24 24"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>
+                            </div>
+                            <h3 class="font-semibold text-slate-900 mb-2">Résultats orientés</h3>
+                            <p class="text-sm text-slate-600">Performance mesurable</p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="bg-white flex flex-col gap-6 rounded-xl py-6 shadow-sm border-2 border-slate-100 hover:border-blue-200 hover:shadow-lg transition-all duration-300 p-6 text-center">
+                            <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <svg class="lucide w-7 h-7 text-purple-600" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                            </div>
+                            <h3 class="font-semibold text-slate-900 mb-2">Réseau professionnel</h3>
+                            <p class="text-sm text-slate-600">Connexions de qualité</p>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="bg-white flex flex-col gap-6 rounded-xl py-6 shadow-sm border-2 border-slate-100 hover:border-blue-200 hover:shadow-lg transition-all duration-300 p-6 text-center">
+                            <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <svg class="lucide w-7 h-7 text-orange-600" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3"></path><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"></path><path d="m21 3 1 11h-2"></path><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"></path><path d="M3 4h8"></path></svg>
+                            </div>
+                            <h3 class="font-semibold text-slate-900 mb-2">Proximité</h3>
+                            <p class="text-sm text-slate-600">Accompagnement sur mesure</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 lg:py-24 bg-gradient-to-b from-slate-50 to-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Qui sommes-nous ?</h2>
+                        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                            Business 2 Development est née de la volonté de <strong>renforcer la compétitivité des entreprises</strong>, en leur apportant des solutions concrètes de développement et de structuration commerciale.
+                        </p>
+                        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                            Basée à <strong>Mahamasina, Antananarivo</strong>, notre entreprise s'adresse aux <strong>PME, grandes entreprises, entrepreneurs et institutions</strong> souhaitant développer leur activité de manière professionnelle et durable.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <svg class="lucide w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                                <div>
+                                    <h4 class="font-semibold text-slate-900">Notre mission</h4>
+                                    <p class="text-slate-600">Accompagner les entreprises dans la création de valeur, la croissance commerciale et le développement de partenariats stratégiques.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <svg class="lucide w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                                <div>
+                                    <h4 class="font-semibold text-slate-900">Notre vision</h4>
+                                    <p class="text-slate-600">Être un acteur de référence du développement B2B à Madagascar, capable de connecter les entreprises locales aux opportunités nationales et internationales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl py-6 border-2 border-slate-100 shadow-xl p-6">
+                        <h3 class="font-semibold text-2xl text-slate-900 mb-2">Nos valeurs</h3>
+                        <p class="text-slate-500 text-base mb-6">Les principes qui guident notre action</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
+                                <svg class="lucide w-5 h-5 text-blue-600" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                                <span class="font-medium text-slate-900">Professionnalisme</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
+                                <svg class="lucide w-5 h-5 text-blue-600" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                                <span class="font-medium text-slate-900">Engagement</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
+                                <svg class="lucide w-5 h-5 text-blue-600" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                                <span class="font-medium text-slate-900">Transparence</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
+                                <svg class="lucide w-5 h-5 text-blue-600" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                                <span class="font-medium text-slate-900">Performance</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-4 bg-slate-50 rounded-lg col-span-2">
+                                <svg class="lucide w-5 h-5 text-blue-600" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                                <span class="font-medium text-slate-900">Partenariat durable</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 lg:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Nos services B2B</h2>
+                        <p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                            Des solutions sur mesure pour accélérer votre croissance et structurer votre développement
+                        </p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                       
+                        <!-- Service 1 -->
+                        <div class="bg-white rounded-xl py-6 shadow-sm border-2 border-blue-100 hover:border-blue-300 hover:shadow-xl transition-all duration-300 group p-6">
+                            <div class="flex items-start gap-4 mb-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
+                                    <svg class="lucide w-8 h-8 text-white" viewBox="0 0 24 24"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>
+                                </div>
+                                <h3 class="font-semibold text-2xl text-slate-900">Développement commercial</h3>
+                            </div>
+                            <ul class="space-y-3 pl-1">
+                                <li class="flex items-start gap-3"><svg class="lucide w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-slate-600">Structurer votre stratégie commerciale</span></li>
+                                <li class="flex items-start gap-3"><svg class="lucide w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-slate-600">Identifier de nouvelles opportunités de marché</span></li>
+                                <li class="flex items-start gap-3"><svg class="lucide w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-slate-600">Optimiser votre prospection B2B</span></li>
+                                <li class="flex items-start gap-3"><svg class="lucide w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-slate-600">Augmenter votre chiffre d'affaires</span></li>
+                            </ul>
+                        </div>
+                        <!-- Service 2 -->
+                        <div class="bg-white rounded-xl py-6 shadow-sm border-2 border-purple-100 hover:border-purple-300 hover:shadow-xl transition-all duration-300 group p-6">
+                            <div class="flex items-start gap-4 mb-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
+                                    <svg class="lucide w-8 h-8 text-white" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
+                                </div>
+                                <h3 class="font-semibold text-2xl text-slate-900">Conseil stratégique</h3>
+                            </div>
+                            <ul class="space-y-3 pl-1">
+                                <li class="flex items-start gap-3"><svg class="lucide w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-slate-600">Clarifier vos objectifs business</span></li>
+                                <li class="flex items-start gap-3"><svg class="lucide w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-slate-600">Améliorer votre positionnement</span></li>
+                                <li class="flex items-start gap-3"><svg class="lucide w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-slate-600">Analyse et orientation stratégique</span></li>
+                                <li class="flex items-start gap-3"><svg class="lucide w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-slate-600">Prise de décisions efficaces</span></li>
+                            </ul>
+                        </div>
+                        <!-- Service 3 -->
+                        <div class="bg-white rounded-xl py-6 shadow-sm border-2 border-green-100 hover:border-green-300 hover:shadow-xl transition-all duration-300 group p-6">
+                            <div class="flex items-start gap-4 mb-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
+                                    <svg class="lucide w-8 h-8 text-white" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                                </div>
+                                <h3 class="font-semibold text-2xl text-slate-900">Mise en relation B2B</h3>
+                            </div>
+                            <ul class="space-y-3 pl-1">
+                                <li class="flex items-start gap-3"><svg class="lucide w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-slate-600">Faciliter les connexions professionnelles</span></li>
+                                <li class="flex items-start gap-3"><svg class="lucide w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-slate-600">Créer des partenariats stratégiques</span></li>
+                                <li class="flex items-start gap-3"><svg class="lucide w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-slate-600">Identifier les opportunités d'affaires</span></li>
+                                <li class="flex items-start gap-3"><svg class="lucide w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-slate-600">Connecter entreprises locales et internationales</span></li>
+                            </ul>
+                        </div>
+                        <!-- Service 4 -->
+                        <div class="bg-white rounded-xl py-6 shadow-sm border-2 border-orange-100 hover:border-orange-300 hover:shadow-xl transition-all duration-300 group p-6">
+                            <div class="flex items-start gap-4 mb-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-700 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
+                                    <svg class="lucide w-8 h-8 text-white" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                                </div>
+                                <h3 class="font-semibold text-2xl text-slate-900">Accompagnement des entreprises</h3>
+                            </div>
+                            <ul class="space-y-3 pl-1">
+                                <li class="flex items-start gap-3"><svg class="lucide w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-slate-600">Entrepreneurs et startups</span></li>
+                                <li class="flex items-start gap-3"><svg class="lucide w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-slate-600">PME en croissance</span></li>
+                                <li class="flex items-start gap-3"><svg class="lucide w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-slate-600">Projets structurants</span></li>
+                                <li class="flex items-start gap-3"><svg class="lucide w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span class="text-slate-600">Institutions et organisations</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section id="why-us" class="py-16 lg:py-24 bg-gradient-to-br from-slate-900 to-blue-900 text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Pourquoi nous choisir ?</h2>
+                        <p class="text-lg text-blue-100 max-w-3xl mx-auto leading-relaxed">Un partenaire de confiance pour réussir ensemble</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <svg class="lucide w-10 h-10 text-blue-300" viewBox="0 0 24 24"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Expertise orientée résultats</h3>
+                            <p class="text-blue-100 leading-relaxed">Des stratégies adaptées à votre réalité, pas de solutions standards</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <svg class="lucide w-10 h-10 text-blue-300" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Connaissance du marché local</h3>
+                            <p class="text-blue-100 leading-relaxed">Des solutions concrètes et efficaces ancrées à Madagascar</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <svg class="lucide w-10 h-10 text-blue-300" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Réseau professionnel actif</h3>
+                            <p class="text-blue-100 leading-relaxed">Connecter les entreprises aux bonnes opportunités, au bon moment</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <svg class="lucide w-10 h-10 text-blue-300" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3"></path><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"></path><path d="m21 3 1 11h-2"></path><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"></path><path d="M3 4h8"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Partenaire de confiance</h3>
+                            <p class="text-blue-100 leading-relaxed">Votre réussite est notre priorité absolue</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 lg:py-24 bg-gradient-to-b from-white to-slate-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Contactez-nous</h2>
+                        <p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">Prêt à accélérer votre croissance ? Discutons de vos projets</p>
+                    </div>
+                    <div class="grid lg:grid-cols-2 gap-12">
+                        <!-- Contact Info -->
+                        <div class="space-y-8">
+                            <div class="bg-white rounded-xl py-6 border-2 border-slate-100 shadow-lg p-6">
+                                <h3 class="font-semibold text-2xl text-slate-900 mb-6">Nos coordonnées</h3>
+                                <div class="space-y-6">
+                                    <div class="flex items-start gap-4">
+                                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                            <svg class="lucide w-6 h-6 text-blue-600" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-900 mb-1">Adresse</h4>
+                                            <p class="text-slate-600">Mahamasina, Antananarivo 101, Madagascar</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-4">
+                                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                            <svg class="lucide w-6 h-6 text-green-600" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-900 mb-1">Téléphone</h4>
+                                            <p class="text-slate-600">034 26 105 24</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-4">
+                                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                            <svg class="lucide w-6 h-6 text-purple-600" viewBox="0 0 24 24"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-slate-900 mb-1">Email</h4>
+                                            <p class="text-slate-600">contact@business2development.mg</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form - CORRIGÉ ET FONCTIONNEL -->
+                        <div class="bg-white rounded-xl py-6 border-2 border-slate-100 shadow-lg p-6">
+                            <h3 class="font-semibold text-2xl text-slate-900 mb-2">Envoyez-nous un message</h3>
+                            <p class="text-slate-500 text-base mb-6">Remplissez le formulaire ci-dessous et nous vous répondrons rapidement</p>
+                           
+                            <form action="https://formspree.io/f/mbdjnnqz" method="POST" class="space-y-6">
+                                <div class="grid sm:grid-cols-2 gap-6">
+                                    <div class="space-y-2">
+                                        <label class="text-sm font-medium leading-none" for="name">Nom *</label>
+                                        <input type="text" name="name" id="name" required placeholder="Votre nom"
+                                               class="flex h-9 w-full rounded-md border border-slate-200 bg-transparent px-3 py-1 text-base shadow-sm transition-colors focus-visible:outline-none focus-visible:border-blue-500 focus-visible:ring-blue-500 md:text-sm">
+                                    </div>
+                                    <div class="space-y-2">
+                                        <label class="text-sm font-medium leading-none" for="company">Entreprise</label>
+                                        <input type="text" name="company" id="company" placeholder="Nom de votre entreprise"
+                                               class="flex h-9 w-full rounded-md border border-slate-200 bg-transparent px-3 py-1 text-base shadow-sm transition-colors focus-visible:outline-none focus-visible:border-blue-500 focus-visible:ring-blue-500 md:text-sm">
+                                    </div>
+                                </div>
+                                <div class="grid sm:grid-cols-2 gap-6">
+                                    <div class="space-y-2">
+                                        <label class="text-sm font-medium leading-none" for="email">Email *</label>
+                                        <input type="email" name="email" id="email" required placeholder="votre@email.com"
+                                               class="flex h-9 w-full rounded-md border border-slate-200 bg-transparent px-3 py-1 text-base shadow-sm transition-colors focus-visible:outline-none focus-visible:border-blue-500 focus-visible:ring-blue-500 md:text-sm">
+                                    </div>
+                                    <div class="space-y-2">
+                                        <label class="text-sm font-medium leading-none" for="phone">Téléphone</label>
+                                        <input type="tel" name="phone" id="phone" placeholder="034 26 105 24"
+                                               class="flex h-9 w-full rounded-md border border-slate-200 bg-transparent px-3 py-1 text-base shadow-sm transition-colors focus-visible:outline-none focus-visible:border-blue-500 focus-visible:ring-blue-500 md:text-sm">
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-medium leading-none" for="message">Message *</label>
+                                    <textarea name="message" id="message" required rows="5" placeholder="Décrivez votre projet ou vos besoins..."
+                                              class="flex min-h-[80px] w-full rounded-md border border-slate-200 bg-transparent px-3 py-2 text-base shadow-sm transition-colors focus-visible:outline-none focus-visible:border-blue-500 focus-visible:ring-blue-500 md:text-sm"></textarea>
+                                </div>
+                                <button type="submit" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-all h-9 px-4 w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-sm py-6">
+                                    Envoyer le message
+                                    <svg class="lucide w-5 h-5 ml-2" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 mt-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                    <div>
+                        <div class="flex items-center space-x-2 mb-4">
+                            <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center">
+                                <svg class="lucide w-6 h-6 text-white" viewBox="0 0 24 24"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                            </div>
+                            <div>
+                                <span class="text-lg font-bold">Business 2</span>
+                                <span class="text-lg font-light text-blue-300 ml-1">Development</span>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">Accélérateur de croissance pour les entreprises ambitieuses à Madagascar et au-delà.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Navigation</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#accueil" class="text-slate-400 hover:text-white transition-colors text-sm">Accueil</a></li>
+                            <li><a href="#about" class="text-slate-400 hover:text-white transition-colors text-sm">À propos</a></li>
+                            <li><a href="#services" class="text-slate-400 hover:text-white transition-colors text-sm">Services</a></li>
+                            <li><a href="#contact" class="text-slate-400 hover:text-white transition-colors text-sm">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Contact</h4>
+                        <ul class="space-y-2 text-sm text-slate-400">
+                            <li class="flex items-start gap-2">
+                                <svg class="lucide w-4 h-4 mt-0.5 flex-shrink-0" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span>Mahamasina, Antananarivo 101, Madagascar</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="lucide w-4 h-4 flex-shrink-0" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                                <span>034 26 105 24</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="lucide w-4 h-4 flex-shrink-0" viewBox="0 0 24 24"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+                                <span>contact@business2development.mg</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-slate-800 pt-8 text-center text-slate-400 text-sm">
+                    <p>© 2025 Business 2 Development. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
